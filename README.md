@@ -1,1 +1,0 @@
-# moneybee2_frontend
