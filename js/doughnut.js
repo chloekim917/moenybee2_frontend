@@ -1,14 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(e){
 
-
     function addData(chart, data) {
     // console.log(chart)
     // console.log(data)
     // console.log(chart.data.datasets[0].data)
-
-   
-       
-
 
     let newArr = []
 
@@ -18,18 +13,13 @@ document.addEventListener("DOMContentLoaded", function(e){
         expenseCategory.Medical, expenseCategory.PetCare)
     // console.log(newArr)
 
-       
     let chartArray = chart.data.datasets[0].data
     chartArray.splice(0, chartArray.length, ... newArr) 
     // console.log(chartArray)
 
     chart.update();
-
-
     }
 
-
-    
 let chartData = {
     labels: [
         "Food","Utilities","Entertainment",
@@ -54,7 +44,6 @@ let chartOptions = {
     }
   };
   
-
     let donut = document.getElementById("donut").getContext("2d");
     
     const donutChart2= 
@@ -63,9 +52,6 @@ let chartOptions = {
         data: chartData,
         options: chartOptions
     });
-
-
-
 
 // let donutLabels = chartData.labels //will give an array
 // const donutChart = renderDonutChart() //will give chart
@@ -124,29 +110,22 @@ function fetchData(url){
             else if (categoryName === "Pet Care"){
                 expenseCategory.PetCare += categoryAmount
             }
-
             
                 
             })
             // console.log(expenseCategory)
-            addData(donutChart2,expenseCategory )
-          
+            addData(donutChart2,expenseCategory ) 
         })
-    
     }
 
 
 fetchData("http://localhost:3000/api/v1/expenditures")
-
   //iterate through array and grab category name DONE
   //create counter for every category to get total
   //total will replace value of matching key in expense Object
-
-
   
   // console.log(expenseCategory)
-
-
+  
   let expenseCategory = {
     Food:0,
     Utilities: 0, 
