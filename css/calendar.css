@@ -1,3 +1,4 @@
+/* calendar css */
 .color-pads {
     width: 680px;
     height: 480px;
@@ -80,15 +81,10 @@
     text-align: center;
   }
 
-  /* .each-month:active{
-    font-weight:bold;
-  } */
-  
   .months {
     color: #AAAAAA;
     position: relative;
     left: 20px;
-    /* right: 10px; */
     top: 90px;
     word-spacing: 17px;
     text-align: center;
@@ -106,14 +102,10 @@
     table-layout: fixed ;
     width: 100% ;
     position: relative;
-    /* height: 280px; */
     height: 80%;
     top: 90px;
-
     text-align: center;
     vertical-align: center;
-    /* padding: 15px; */
-    /* word-spacing: 15px; */
 
   }
   

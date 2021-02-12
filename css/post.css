@@ -1,3 +1,4 @@
+/* budget and expense calculator css */
 .postit {
     line-height: 1;
     text-align:left;     
@@ -52,7 +53,6 @@
 }
 
 .total{
-    /* padding-right: 5px; */
     text-align: right;
     font-size: 28px;
     color: #91000C;

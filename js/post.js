@@ -8,7 +8,6 @@ let calendarBody = document.getElementById('calendar-body')
 
 
 document.addEventListener('click', function(e){
-    // console.log(e.target)
     if(e.target.className === 'selected-day'){
         spendingBody.innerHTML = "" 
         arr = []
@@ -112,8 +111,7 @@ function postExpenditures(spendingObj){
             <button>x</button>
             `
         spendingBody.append(newSpent)
-        // }
-        
+
         arr.push(spendingObj.amount)
         let totalSpending = arr.reduce(function(a, b){
             return parseFloat(a + b);
@@ -146,7 +144,4 @@ function deleteExpenditures(){
     })
 }
 
-// getExpenditures()
-// render()
-// postExpenditures()
 deleteExpenditures()
