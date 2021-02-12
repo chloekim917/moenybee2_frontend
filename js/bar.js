@@ -162,11 +162,9 @@ function fetchData(url){
 
 
 fetchData("http://localhost:3000/api/v1/expenditures")
-
   //iterate through array and grab category name DONE
   //create counter for every category to get total
   //total will replace value of matching key in expense Object
-
 
   
   // console.log(expenseCategory)

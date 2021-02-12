@@ -14,7 +14,7 @@ function renderMonths(){
         monthSpan.id = i+1
         monthSpan.innerHTML = `${month}`
         months.append(monthSpan)
-
+        
         //need to find a different way to select month
         monthSpan.addEventListener('click', function(e){
             if(document.querySelector('.hidden-p')){

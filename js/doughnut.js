@@ -111,7 +111,6 @@ function fetchData(url){
                 expenseCategory.PetCare += categoryAmount
             }
             
-                
             })
             // console.log(expenseCategory)
             addData(donutChart2,expenseCategory ) 
@@ -125,7 +124,7 @@ fetchData("http://localhost:3000/api/v1/expenditures")
   //total will replace value of matching key in expense Object
   
   // console.log(expenseCategory)
-  
+
   let expenseCategory = {
     Food:0,
     Utilities: 0, 
@@ -140,6 +139,4 @@ fetchData("http://localhost:3000/api/v1/expenditures")
     Medical:0, 
     PetCare:0
   }
-
-
 })

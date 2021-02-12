@@ -1,0 +1,44 @@
+/* flexbox of the whole page */
+.top-bar {
+    background-image: linear-gradient(
+        rgba(212, 235, 255, 0.904), rgba(255, 255, 255, 0.904)
+    );
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+.middle-bar{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.bottom-bar{
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: right;
+}
+
+.app-name{
+    font-size: 75px;
+    font-family: 'Abril Fatface';
+    color: rgb(0, 0, 39);
+    font-weight: bolder;
+    margin-top: 60px;
+    margin-bottom: -10px;
+}
+
+.app-description{
+    font-size: 25px;
+    font-family: 'Abril Fatface';
+    color: rgb(0, 0, 39);
+    font-weight: bold;
+}
