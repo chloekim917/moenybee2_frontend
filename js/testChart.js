@@ -2,7 +2,10 @@ var ctx = document.getElementById('chart').getContext('2d');
 var w = 1000, h = 800, maxR = 10, numItems = 500;
 
 var chart = new Chart(ctx, {
-  type: 'bubble',
+  // type: 'bubble',
+  type: 'bar',
+  // type: 'doughnut',
+  // type: 'line',
   options: {
     legend: {
       display: false
