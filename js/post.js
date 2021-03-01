@@ -6,7 +6,6 @@ let sp = document.querySelector('.add-spending-form')
 let hideSeek = document.querySelector('.hide-seek')
 let calendarBody = document.getElementById('calendar-body')
 
-
 document.addEventListener('click', function(e){
     if(e.target.className === 'selected-day'){
         spendingBody.innerHTML = "" 
@@ -21,7 +20,6 @@ document.addEventListener('click', function(e){
     })
     }  
 })
-
 
 function renderExpenditure(expenditure){
     let spent = document.createElement("tr")
@@ -44,12 +42,10 @@ function renderExpenditure(expenditure){
     totalDisp.textContent=`${totalSpending}` 
 }
 
-
 document.addEventListener('click', function(e){
     if(e.target.className === 'selected-day')
     sp.id = e.target.id
 })
-
 
 sp.addEventListener('submit', function(e){
     e.preventDefault()
@@ -62,8 +58,7 @@ sp.addEventListener('submit', function(e){
     }
     postExpenditures(spendingObj)
 })
-    
-   
+     
 function postExpenditures(spendingObj){
     fetch('http://localhost:3000/api/v1/expenditures', {
         method: "POST",
@@ -121,7 +116,6 @@ function postExpenditures(spendingObj){
 
         sp.reset()
     }
-
 
 function deleteExpenditures(){
     document.addEventListener('click', function(e){
