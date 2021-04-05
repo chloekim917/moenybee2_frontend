@@ -111,7 +111,7 @@ function previousYear(){
         if(e.target.className === 'triangle-left'){
             e.preventDefault()
             currentYear = currentYear - 1;
-            currentMonth = currentMonth;
+            currentMonth = currentMonth; 
             renderCalendar(currentMonth, currentYear);
         }
     })
