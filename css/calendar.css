@@ -86,10 +86,13 @@
     position: relative;
     left: 20px;
     top: 90px;
-    word-spacing: 17px;
     text-align: center;
   }
-  
+
+  .each-month{
+    padding-left: 20px;
+  }
+
   .month-line {
     border-color: #E8E8E8;
     position: relative;
